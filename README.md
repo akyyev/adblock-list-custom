@@ -1,5 +1,35 @@
 # Supplemental DNS blocklist
 
+## Recommended smaller alternative
+
+For minimalist coverage, use **`ios-dns-minimal.adblock`** alongside the original
+FutureMind list, **instead of** the larger HaGeZi supplement. Disable/remove the
+HaGeZi supplement if it is already imported; importing the smaller file does not
+remove the larger list's rules.
+
+This alternative uses [Peter Lowe's list](https://pgl.yoyo.org/adservers/), which
+contained 3,558 domains on November 25, 2026. It focuses on dedicated advertising
+and tracking servers, with some other unwanted domains. Its inclusion policy
+calls for manual review of submissions and weekly hostname validity checks.
+This is a smaller starting point, not measured proof of blocking most ads on
+your particular apps/sites. Domain and wildcard pairs retain the source filters'
+subdomain coverage. Identical rules in the original FutureMind list are removed.
+The same import instructions and iPhone testing limitations below apply.
+
+Source attribution and the original source header are preserved in
+`sources/peter-lowe.txt`; `minimal-build-report.json` records counts and a source
+hash. The GPL attribution below concerns the HaGeZi/FutureMind lists, not a
+relicensing of Peter Lowe's source.
+
+To update the small alternative, download the source successfully, then build:
+
+```sh
+curl -fsSL 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' -o sources/peter-lowe.txt
+python3 scripts/build_minimal.py
+```
+
+## Extensive alternative
+
 Use `ios-dns-supplement.adblock` alongside FutureMind's original list. It follows
 the original `category/service/domain` import format. The original file's header
 is dated 2020-12-09 and contains 810 unique rules.

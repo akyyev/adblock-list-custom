@@ -1,0 +1,9 @@
+{
+  "source": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+  "source_sha256": "d595ca54e7561460d3f0b22849be073251e9ce760d46807b1656e3f42614c3dc",
+  "source_date": "!Last modified: Wed, 25 Nov 2026 11:58:27 GMT",
+  "source_domains": 3558,
+  "identical_baseline_rules_removed": 180,
+  "supplement_rules": 6936,
+  "bytes": 275374
+}
