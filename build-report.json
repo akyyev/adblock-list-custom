@@ -1,0 +1,20 @@
+{
+  "baseline_unique_rules": 810,
+  "source_unique_domains": 85887,
+  "identical_baseline_rules_removed": 362,
+  "supplement_rules": 171412,
+  "source_headers": [
+    "# Last modified: 25 Nov 2026 16:30 UTC",
+    "# Version: 2026.1125.1630.46"
+  ],
+  "sources": {
+    "futuremind.adblock": {
+      "url": "https://raw.githubusercontent.com/FutureMind/adblock-ios-rules/master/ios-dns-rules.adblock",
+      "sha256": "28ef55941500990c0c42b19e488244abc64c54298fdff0cab34b5f6ce895d7e3"
+    },
+    "hagezi-light.txt": {
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt",
+      "sha256": "75c98e91333d8ca36f120a3595ad5d6b175f957c9b8c319dcb42c8c3f46bef7a"
+    }
+  }
+}
